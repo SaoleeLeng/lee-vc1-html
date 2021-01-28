@@ -1,17 +1,16 @@
 body{
     margin: 0;
     padding: 0;
-    background-image:url(laa.png);
-    background-size:cover;
-    /* background:#a6c1ee; */
-    
+    /* background:#c9cbff; */
+    width:100%;
+    overflow-x: hidden;
+    background-image:url(developer.jpg);
+    /* background-image:url(photo.jpg); */
 }
 .container{
-    width: 100%;
-    height: 100%;
     text-decoration: uppercase;
     color: rgb(243, 246, 253);
-    
+    /* padding-right: 15px; */ 
 }
 ul{
     list-style: none;
@@ -24,33 +23,50 @@ ul, li{
 }
 ul, li, a{
     text-decoration: none;
-    
     font-size: 25px;
     color: #ffff;
     margin-left: 70px;
 }
-nav{
+.nav{
     background-image:url(first.jpg);
     background-position: center;
     background-size: cover;
-    overflow: hidden;
+    width:100%;
+    position: fixed;
+    /* overflow: hidden; */
 }
-nav a:hover{
-    background:#57add4;
+.nav a:hover{
+    background:#222831;
     cursor: pointer;
     color:rgb(31, 83, 197);
+
 }
+
 main{
     /* background:#b9cbeb; */
     width: 50%;
     height: 250px;
     padding: 20px;
 }
+main :hover{
+    background:#eff8ff;
+    cursor: pointer;
+    color:#6f9eaf;
+}
 aside{
     /* background:#b9cbeb; */
     width: 50%;
     height: 250px;
     padding: 20px;
+}
+aside h4{
+    margin-top:50px;
+    text-align: center;
+}
+aside :hover{
+    background:#eff8ff;
+    cursor: pointer;
+    color:#6f9eaf;
 }
 h3{
     text-align:center;
@@ -62,16 +78,39 @@ h3{
 }
 .content{
     display: flex;
+    width: 100%;
+    height:50vh;
+    background-image: url(ab.jpg);
 }
-.content1,.content2{
-    /* background:#b9cbeb; */
+.content1{
+
+    /* background:#c9cbff; */
     width: 50%;
-    height: 350px;
+    height: 50vh;
+    margin-right:5px;
+}
+.content1 p{
+    color:rgb(65, 45, 241) ;
+    font-family: cursive;
+}
+.content1:hover{
+    background:#eff8ff;
+    cursor: pointer;
+    color:#6f9eaf;
 }
 .content2{
-    /* background:#b9cbeb; */
+    /* background:#c9cbff; */
+    /* width: 50%; */
+    height: 50vh;
     width: 50%;
-    height: 350px;
+    margin-right: 5px;
+    /* padding: 5px;    */
+}
+.content2:hover{
+    background:#d7e0e7; 
+    
+    cursor: pointer;
+    color:#6f9eaf;
 }
 .info{
     display:flex;
@@ -88,9 +127,12 @@ h3{
    height: 250px;
 }
 p{
+  font-size: 15px;
+  font-family:sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
+  color:rgb(69, 80, 233);
 }
 .b{
   display: inline-block;
@@ -106,53 +148,38 @@ p{
   margin-top: 10px;
   
 }
-/* .bi{
-    margin: 0;
-    padding: 0;
-    background: #1f07ac;
-    width:100%;
-} */
-.botton{
-    width: 300px;
-    height: 45px;
-    background:rgb(5, 5, 240);
-    margin-top: 60px;
-    /* box-sizing: border-box; */
-    border-radius: 40px;
-    border: none;
-    outline: none;
-    
-    
-    }
+
+
 footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5px;
+    padding: 55px; 
     background: rgb(37, 36, 36);
+    /* width: 1365px; */
+    margin: 5px;
+    padding-bottom: 5px;
 }
 .Service{
-    /* background:#ccdcf7; */
+    display:flex;
+    justify-content: center;
+    align-items: center;
     width:100%;
     height:100vh;
 }
+
+
 .Contact{
     /* background:#dde1e7; */
-    height: 100vh;
+    /* height: 100vh;
     width: 100%;
-    padding:20px;
+    padding:20px; */
 }
 .Project{
     /* background:#c5d9fc; */
-    height: 100vh;
+    /* height: 100vh;
     width: 100%;
-    padding:20px;
-}
-.requet-staff{
-    /* background:#a8c1de; */
-    height: 100vh;
-    width: 100%;
-    padding:20px;
+    padding:20px; */
 }
 .location{
     margin-top:-400px;
@@ -165,18 +192,62 @@ footer{
     height: 45vh;
     text-align: center;
 }
-input[type=text]{
-    width:22%;
+.column h4{
+    margin-top:50px;
+    font-family:Verdana;
 }
+input[type=text]{
+    background:rgb(112, 112, 226);
+    width:22%;
+    
+}
+input[type=submit]{
+    margin-right:70%;
+    background:rgb(13, 13, 236);
+    border: none;
+    border-radius:20px;
+    color: rgb(169, 224, 231);
+}
+
 h2{
     text-align:center;
 }
 .Hobbies{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
     
-    padding:5px 0px ;
-    margin-right:5px;
-    width: 50%;
-    box-sizing: border-box;
-    
-
 }
+.first,.second,.three,.fouth,.fi{
+    margin:15px;
+}
+.botton{
+    width: 200px;
+    height: 30px;
+    background:blue;
+    box-sizing: border-box;
+    border-radius: 40px; 
+    margin-top:-20px; 
+    margin-right: 40%;
+    }
+    .re{
+        margin-bottom:-60px;
+        margin-right:60px;
+        
+    }
+    .add{
+        margin:5px;
+    }
+    .Skill{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+    }
+    .Skill h2{
+        margin-top:-250px;
+       
+    }
